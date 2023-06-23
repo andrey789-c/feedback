@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="head">
+      <h1 class="head__title">Обратная форма</h1>
+    </div>
+    
+    <form class="form" id="form">
+      <div class="form__block">
+        <input class="form__input" type="text" id="name" name="name">
+        <label class="form__label" for="name">ФИО</label>
+      </div>
+      <div class="form__block">
+        <input class="form__input" type="tel" id="phone" name="phone">
+        <label class="form__label" for="phone">Телефон</label>
+      </div>
+      <div class="form__block">
+        <input class="form__input" type="text" id="email" name="email">
+        <label class="form__label" for="email">E-mail</label>
+      </div>
+      <div class="form__block form__block-textaraea">
+        <textarea name="message" id="message" class="form__input form__textarea"></textarea>
+        <label class="form__label" for="message">Сообщение</label>
+      </div>
+
+      <div class="form__agreement">
+        <div class="form__agreement-block">Отправляя форму, Вы соглашаетесь на <a href="#">обработку персональных данных</a></div>
+      </div>
+
+      <button class="form__button">Отправить</button>
+
+    </form>
+  </div>
+
+  <script src="./script/main.js"></script>
+</body>
+</html>

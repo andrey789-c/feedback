@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.wrapper {
+  width: 100%;
+  max-width: 598px;
+  margin: 0 auto;
+}
+.head {
+  margin: 45px 0 29px 0;
+  text-align: center;
+}
+.head__title {
+  color: #263238;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 600;
+  -webkit-text-stroke: 1px #000000; /* Толщина и цвет обводки */
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 485px;
+  margin: 0 auto;
+}
+
+.form__block {
+  position: relative;
+  margin-bottom: 26px;
+  width: 232px;
+  height: 56px;
+}
+
+.form__label {
+  position: absolute;
+  color: #263238;
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 16px;
+  z-index: 22;
+  background: #ffffff;
+  left: 12px;
+  padding: 0 3px;
+}
+.form__input {
+  position: absolute;
+  top: 7px;
+  border-radius: 8px;
+  border: 1px solid #263238;
+  width: 100%;
+  height: 100%;
+  padding: 12px 10px;
+  color: #263238;
+  font-size: 16px;
+  font-family: Inter;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+}
+
+.form__input.empty {
+  border-color: red;
+}
+.form__input:focus {
+  border-color: #1BB55C;
+  border-width: 2px;
+  outline: 0;
+}
+
+.form__input:focus + .form__label {
+  color: #1BB55C;
+}
+
+.form__block-textaraea {
+  width: 485px;
+  height: 120px;
+}
+.form__textarea {
+  resize: none;
+}
+
+.form__agreement {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+.form__agreement-block {
+  color:  #263238;
+  font-size: 12px;
+  font-family: Inter;
+  line-height: 20px;
+  letter-spacing: 0.06px;
+}
+.form__agreement-block a {
+  color: #263238;
+}
+.form__button {
+  width: 205px;
+  height: 45px;
+  margin: 0 auto;
+  border-radius: 4px;
+  background: #1BB55C;
+  border: 0;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.form__button:hover {
+  background: #078b3e;
+}
