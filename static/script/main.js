@@ -41,7 +41,7 @@ form.addEventListener('submit', async (e) => {
     alert('Данные успешно отправились!')
 
     nameInput.value = ''
-    phone.value = ''
+    phone.value = '+7'
     email.value = ''
     message.value = ''
   } catch (error) {
